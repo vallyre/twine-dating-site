@@ -1,5 +1,3 @@
-require 'active_record'
-
 class CreateUser < ActiveRecord::Migration[5.0]
   def up
     create_table :user do |t|
@@ -10,7 +8,7 @@ class CreateUser < ActiveRecord::Migration[5.0]
       t.string :gender_pref
       t.string :gender
       t.string :likes, array: true, default: []
-      
+
       t.timestamps
     end
   end

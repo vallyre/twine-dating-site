@@ -1,5 +1,3 @@
-require 'activerecord'
-
 class CreateImages < ActiveRecord::Migration[5.0]
     def up
      create_table :images do |t|

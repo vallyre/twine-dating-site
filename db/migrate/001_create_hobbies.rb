@@ -1,5 +1,3 @@
-require 'activerecord'
-
 class CreateHobbies < ActiveRecord::Migration[5.0]
     def up
      create_table :hobbies do |t|

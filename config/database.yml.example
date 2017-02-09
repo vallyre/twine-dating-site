@@ -1,6 +1,6 @@
-host: 'localhost',
-adapter: 'postgresql',
-database: 'DBNAME',
-username: 'USERNAME',
+host: 'localhost'
+adapter: 'postgresql'
+database: 'DBNAME'
+username: 'USERNAME'
 encoding: 'utf8'
 pool: 5

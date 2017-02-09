@@ -39,7 +39,7 @@ get '/api/users/:id/crushes' do |id|
 end
 
 post '/api/users' do
-  user = User.new(first_name: params[:first_name], last_name: params[:last_name], age: params[:age], gender: params[:gender], image: params[:image])
+  user = User.new(name: params[:name], dob: params[:dob], gender: params[:gender], image: params[:image])
 
   if user.valid?
     user.save

@@ -2,8 +2,8 @@ require 'active_record'
 require_relative 'like'
 
 class User < ActiveRecord::Base
-  validates :first_name, :last_name, presence: true
-  validates :age, numericality: { only_integer: true, greater_than: 18 }
+  validates :name, :dob, presence: true
+  # validates_format_of :dob, :with => /\d+\/\d+\/\d+/
   validates :gender, inclusion: { in: ['male', 'female'] }
   validates :image, presence: true
   has_many :likes

@@ -1,4 +1,5 @@
 require 'active_record'
+require_relative 'like'
 
 class User < ActiveRecord::Base
   validates :first_name, :last_name, presence: true

@@ -32,7 +32,7 @@ get '/api/users/:id' do |id|
   user.to_json
 end
 
-get '/api/users/:id/crushes'
+get '/api/users/:id/crushes' do |id|
   user = User.find_by_id(id)
   crushes = user.crushes
   crushes.to_json

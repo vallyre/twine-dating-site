@@ -29,6 +29,14 @@ describe 'api' do
         expect(JSON.parse(last_response.body).last['gender']).to eq 'female'
       end
     end
+
+    context 'when number of results is entered' do
+      it 'returns a random selection of that amount of users' do
+        get '/api/users?results=10'
+
+        expect(JSON.parse(last_response.body).length).to eq 10
+      end
+    end
   end
 
   describe '#get /api/users/:id' do

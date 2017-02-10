@@ -14,13 +14,20 @@ after do
   ActiveRecord::Base.connection.close
 end
 
-#Get all users *optional* filter by gender (e.g. /api/users?gender=male)
+#Get all users
+#Optional: filter by gender (e.g. /api/users?gender=male)
+#Optional: select number of results (e.g. /api/users?gender=female&results=10, /api/users?results=100, etc.)
 get '/api/users' do
   users = User.all
 
   gender = params[:gender]
   unless gender.blank?
     users = users.where(gender: gender)
+  end
+
+  results = params[:results].to_i
+  if results > 0
+    users = users.sample(results)
   end
 
   users.to_json

@@ -14,6 +14,12 @@ after do
   ActiveRecord::Base.connection.close
 end
 
-put '/api/users/:id/likes/:crush_id' do |id, crush_id|
+post '/api/users/:id/likes/:crush_id' do |id, crush_id|
+  user = User.find_by_id(id)
+  crush = User.find_by_id(crush_id)
+
+  halt(404, { message:'invalid id'}.to_json) if (user.nil? || crush.nil?)
+
   Like.create(user_id: id, crush_id: crush_id)
+  status 201
 end

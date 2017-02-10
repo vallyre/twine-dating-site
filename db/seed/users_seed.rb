@@ -2,8 +2,13 @@ require 'csv'
 require_relative '../../lib/models/user'
 require 'active_record'
 
-database_config = YAML::load(File.open('config/database.yml'))
-ActiveRecord::Base.establish_connection(database_config)
+connection_details = ENV['DATABASE_URL']
+
+if connection_details.blank?
+  connection_details = YAML::load(File.open('config/database.yml'))
+end
+
+ActiveRecord::Base.establish_connection(connection_details)
 
 def main
   CSV.readlines('data/randomusers.csv', headers: true).each do |row|

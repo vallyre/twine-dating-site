@@ -2,3 +2,5 @@
 .yml
 test_environment.rb
 test_database.yml
+.sass-cache
+*.css.map

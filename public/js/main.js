@@ -1,28 +1,27 @@
-( function() {
-	"use strict";
+ ( function() {
+ 	"use strict";
 
-	$( document ).ready( () => {
+ 	$( document ).ready( () => {
 
-		console.clear();
+ 		console.clear();
 
-		const APP = function() {
-
-
+ 		const Twine = function() {
 
 
-			function init() {
 
-			}
+ 			function init() {
+// //
+ 			}
 
-			return {
-				begin: init
-			};
+ 			return {
+ 				begin: init
+ 			};
 
-		}; //end APP
+ 		}; //end APP
 
-	} ); //end docready
+ 	} ); //end docready
 
-	const THING = APP();
-	THING.init();
+ 	const twine = Twine();
+ 	twine.init();
 
-} )(); //end iife
+ } )(); //end iife

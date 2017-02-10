@@ -54,6 +54,7 @@ DEPENDENCIES
   activerecord
   pg
   puma
+  rack
   rake
   rspec
   shotgun

@@ -1,2 +1,4 @@
 .DS_Store
 .yml
+test_environment.rb
+test_database.yml

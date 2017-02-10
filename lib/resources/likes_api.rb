@@ -5,7 +5,7 @@ require_relative '../models/user'
 database_config = ENV['DATABASE_URL']
 
 if database_config.blank?
-  database_config = YAML::load(File.open('config/test_database.yml'))
+  database_config = YAML::load(File.open('config/database.yml'))
 end
 
 ActiveRecord::Base.establish_connection(database_config)

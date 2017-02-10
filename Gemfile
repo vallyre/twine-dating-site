@@ -6,6 +6,7 @@ gem 'sinatra'
 gem 'pg'
 gem 'rake'
 gem 'puma'
+gem 'rack'
 
 group :development do
   gem 'shotgun'

@@ -2,69 +2,132 @@
 <html lang="en">
 
 <head>
-    <title>Dating site</title>
-    <meta name="viewport" content="width=device-width" initial-scale="1">
-    <link rel=stylesheet type="text/css" href="styles/main.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> -->
-    <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> -->
+
+  <title>T W I N E | the iron dating site</title>
+  <meta name="viewport" content="width=device-width" initial-scale="1">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Megrim" rel="stylesheet">
+  <link rel=stylesheet type="text/css" href="styles/main.css">
 </head>
 
 <body>
+  <!-- <div class='over-18'>
+    <button class='is-hidden'>Are you over 18? Click for yes</button>
+  </div> -->
 
-    <header>
-        <h1>RESULTSS!!!!!</h1>
+  <div id="bg-container">
+    <video id="bg" src="img/dating.mp4" autoplay="true" loop="true" muted="true"></video>
+  </div>
+
+  <header>
+    <div class='logo'></div>
+    <h1 class='hero-text'>TWINE</h1>
+    <p class='hero-text'>the iron dating site</p>
+  </header>
+
+  <main>
+
+    <h2>'cause everyone loves to judge</h2>
+
+    <form class='user-form' type='submit'>
+
+      <span class='no-wrap'>
+    <label for 'user-name'>Full Name:</label>
+    <input type='text' class='user-name space-after' name='user-name' placeholder='your name' />
+</span>
+      <span class='no-wrap'>
+
+    <label for 'user-gender'>Identify as?</label>
+    <select class = 'space-after'>
+      <option selected disabled>Gender?</option>
+      <option value="male">I'm a MALE!</option>
+      <option value="female">I'm a FEMALE!</option>
+      <option value="female">I'm undefined?</option>
+    </select>
+  </span>
+      <span class='no-wrap'>
+
+    <label for 'user-dob'>DOB:</label>
+    <input type='date' class='user-dob space-after' name='user-dob' />
+  </span>
+      <span class='no-wrap'>
+
+    <label for 'user-photo'>Upload "your" photo!</label>
+    <input input type='file' class = 'user-photo space-after' name=' user-photo' accept="image/*">
+  </span>
+      <button type='submit' class='form-submit'>enTWINE ME!</button>
+    </form>
+
+    <header class='profile-header space-after'>
+      <h2>TWINE</h2>
+      <p>
+        the Iron dating site | cause everyone loves to judge
+      </p>
     </header>
 
-    <main>
-        <section class="main-content">
+    <div class='profile-likes-container'>
 
-            <article class="user-info">
-                <img class="profile-pic" src="http://68.media.tumblr.com/4e2fe93247735a74061d622f531c6c2f/tumblr_mm85ftHFbD1qkodk4o1_1280.jpg" />
-                <nav>
-                    <button></button>
-                    <button></button>
-                </nav>
-                <ul>
-                    <li>{{name}}</li>
-                    <li>{{dob}}</li>
-                    <li>{{location}}</li>
-                </ul>
-            </article>
-            <aside class="match-info">
-                <article class="random-user">
-                    <img class="profile-pic" src="http://68.media.tumblr.com/4e2fe93247735a74061d622f531c6c2f/tumblr_mm85ftHFbD1qkodk4o1_1280.jpg" />
-                    <ul>
-                        <li>{{name}}</li>
-                        <li>{{dob}}</li>
-                        <li>{{location}}</li>
-                    </ul>
-                </article>
-                <article class="random-user">
-                    <img class="profile-pic" src="http://68.media.tumblr.com/4e2fe93247735a74061d622f531c6c2f/tumblr_mm85ftHFbD1qkodk4o1_1280.jpg" />
-                    <ul>
-                        <li>{{name}}</li>
-                        <li>{{dob}}</li>
-                        <li>{{location}}</li>
-                    </ul>
-                </article>
-                <article class="random-user">
-                    <img class="profile-pic" src="http://68.media.tumblr.com/4e2fe93247735a74061d622f531c6c2f/tumblr_mm85ftHFbD1qkodk4o1_1280.jpg" />
-                    <ul>
-                        <li>{{name}}</li>
-                        <li>{{dob}}</li>
-                        <li>{{location}}</li>
-                    </ul>
-                </article>
-            </aside>
-        </section>
-    </main>
+      <section class='profile-section'>
 
-    <footer>
-    </footer>
-    <script src="js/vendor/jquery-3.1.1.min.js"></script>
-    <script src="js/vendor/handlebars-v4.0.5.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+        <!-- begin handlebars -->
+        <div class='profile-wrapper'>
+          <h2>T W I N E R</h2>
+          <div class='img-wrapper '>
+            <img src='img/dude.jpeg' />
+          </div>
+          <h2 class='full-name space-after'>Marvin Williams</h2>
+          <p class='gender'>I'm a MALE!</p>
+          <p class='dob'>09-03-1988</p>
+
+          <ul class='social-icons'>
+            <li><img class = 'icon' src = 'img/facebook.png' alt = 'facebook'</li>
+            <li><img class = 'icon' src = 'img/github.png' alt = 'github'</li>
+            <li><img class = 'icon' src = 'img/google+.png' alt = 'google+'</li>
+            <li><img class = 'icon' src = 'img/instagram.png' alt = 'instagram'</li>
+            <li><img class = 'icon' src = 'img/snapchat.png' alt = 'snapchat'</li>
+            <li><img class = 'icon' src = 'img/twitter.png' alt = 'twitter'</li>
+          </ul>
+          <div class='profile-buttons'>
+            <button class='knot'>KNOT !<img class = 'icon' src='img/thumb-down.png' alt='thumbsup' /></button>
+            <button class='snag'>SNAG !<img class = 'icon' src='img/thumb-up.png' alt='thumbsup' /></button>
+          </div>
+        </div>
+        <!-- end handlebars -->
+
+      </section>
+      <section class="likes-section">
+        <h2>10 latest S N A G S!</h2>
+
+        <!-- begin handlebars -->
+        <article class="mini-profile">
+          <img class="thumb" src="http://68.media.tumblr.com/4e2fe93247735a74061d622f531c6c2f/tumblr_mm85ftHFbD1qkodk4o1_1280.jpg" /></li>
+          <ul>
+            <li><h3>Bob Builder</h3></li>
+            <li>I'm a MALE!</li>
+            <li>9-23-1988</li>
+          </ul>
+          <img class='icon' src='img/thumb-up.png' alt='thumbsup' />
+        </article>
+        <!-- end handlebars -->
+      </section>
+  </main>
+  </div>
+  </main>
+
+
+
+  <footer class='space-after'>
+    <p>
+      All rights reserved &copy; 2017 Twine Inc.
+    </p>
+  </footer>
+  <!-- <script id='profile-template' type = 'text/x-handlebars'> -->
+  <!-- one handlebars section -->
+  <!-- </script> -->
+
+  <script src='js/vendor/jquery-3.1.1.min.js'></script>
+  <script src='js/vendor/handlebars-v4.0.5.js'></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  
 </body>
 
 </html>

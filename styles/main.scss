@@ -1,20 +1,38 @@
 @import 'partials/reset';
-@import 'partials/main-content';
+@import 'partials/styles';
+@import 'partials/homescreen';
+@import 'partials/profile';
+@import 'partials/miniprofile';
 
 body {
-    font-size: 16px;
-    line-height: 1.6;
+    background: $ltpink;
+    font: 18px/1.6 $jose;
     margin: 0 auto;
-    position: absolute;
+    text-align: center;
     width: 100%;
-    background: linear-gradient(270deg, #ef5723, #4c189a);
 }
 
-main {
-    border: 1px solid black;
-    height: 600px;
-    margin: 0 auto;
-    position: relative;
-    width: 90%;
-    margin: 35px;
+h1 {
+    color: white;
+    font-size: 10rem;
+    position: absolute;
+    text-shadow: 5px 5px #e94177;
+}
+
+h2 {
+    background: transparentize($pink, .4);
+    color: white;
+    font-family: $megrim;
+    font-size: 1.5rem;
+    padding: 0 20px;
+}
+
+h3 {
+  background: transparentize($pink, .4);
+  font: 1.2rem/1.2 $jose;
+}
+
+footer {
+  background: transparentize($pink, .4);
+  margin-top: 10px;
 }

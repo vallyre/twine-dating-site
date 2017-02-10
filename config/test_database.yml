@@ -1,0 +1,6 @@
+host: 'localhost'
+adapter: 'postgresql'
+database: 'dating_site_test'
+username: 'Brentice'
+encoding: 'utf8'
+pool: 5

@@ -1,0 +1,75 @@
+.user-profile {
+    background-color: transparentize($pink, .4);
+    background: url('../img/profile-bg.jpg');
+    padding: 1vh 0;
+}
+
+.profile-section {
+    border-radius: 10px;
+    background: $maroon;
+    color: white;
+    max-width: 450px;
+    position: relative;
+    width: 50%;
+}
+
+.social-icons {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.social-icons li {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+
+    &:hover {
+        transition: 0.5s ease;
+    }
+}
+
+.profile-buttons {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.img-wrapper {
+    background: no-repeat center/80% url("../img/frame.png");
+    max-height: 330px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 50px;
+    width: 267px;
+}
+
+.img-wrapper {
+    border-radius: 10px;
+}
+
+.knot {
+    background: transparentize($pink, .4);
+    border: 1px solid $pink;
+    border-radius: 10px;
+    float: left;
+    font-family: $jose;
+    font-size: 1.5rem;
+    padding: 10px;
+
+    & img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &:hover {
+        background-color: $pink;
+        color: white;
+        transition: 0.5s ease;
+    }
+}
+
+.snag {
+    @extend .knot;
+    float: right;
+}

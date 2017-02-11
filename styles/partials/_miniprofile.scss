@@ -1,0 +1,57 @@
+.profile-header {
+    background: url('../img/string.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 10%;
+    text-align: right;
+    & h2 {
+        background-color: inherit;
+        color: $maroon;
+        font-size: 3rem;
+        line-height: 1;
+    }
+    & p {
+    border-bottom: .5px solid $pink;
+    padding-right: 20px;
+  }
+}
+
+.profile-container {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.likes-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 5px;
+
+    & h2 {
+        border-radius: 10px;
+    }
+}
+
+.mini-profile {
+    align-items: center;
+    background: #ffd9d9;
+    border-bottom: 0.5px solid $pink;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    min-width: 350px;
+    padding-bottom: 5px;
+    text-align: center;
+
+    & ul {
+        padding: 10px;
+    }
+    & h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 0 2px;
+      background: inherit;
+    }
+}

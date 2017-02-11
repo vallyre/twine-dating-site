@@ -1,0 +1,64 @@
+input,
+label,
+select {
+    border-radius: 10px;
+    display: block;
+    font-size: 1rem;
+    font-family: $jose;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: left;
+}
+
+input,
+select {
+    color: gray;
+}
+
+.user-file-input {
+  width: 200px;
+}
+
+#bg-container {
+    height: 400px;
+    overflow: hidden;
+}
+
+#bg {
+    width: 100%;
+}
+
+.hero-text {
+    background: transparentize($maroon, .4);
+    color: white;
+    font-family: $megrim;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+.user-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 640px;
+    text-align: center;
+}
+
+.form-submit {
+    background: transparentize($pink, .4);
+    border-radius: 10px;
+    border: 1px solid $pink;
+    font-family: $jose;
+    font-size: 1.5rem;
+
+    &:hover {
+        background-color: $pink;
+        border: 5px solid white;
+        color: white;
+        transition: 0.5s ease;
+    }
+}

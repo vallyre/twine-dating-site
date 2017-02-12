@@ -72,9 +72,9 @@ end
 
 delete '/api/users/:id' do |id|
   user = User.find_by_id(id)
-  if !user.exists?(id)
+  if user.nil?
     status 404
   else
-    user.destroy(id)
+    user.destroy
   end
 end

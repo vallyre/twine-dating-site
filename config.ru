@@ -5,7 +5,7 @@ require_relative 'lib/resources/users_api'
 run Sinatra::Application
 
 use Rack::Static,
-  :urls => ["/images", "/js", "/css"],
+  :urls => ["/img", "/js", "/styles"],
   :root => "public"
 
 run lambda { |env|

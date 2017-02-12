@@ -15,6 +15,10 @@ select {
     color: gray;
 }
 
+.user-file-input {
+  width: 200px;
+}
+
 #bg-container {
     height: 400px;
     overflow: hidden;
@@ -40,7 +44,7 @@ select {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 auto;
-    max-width: 840px;
+    max-width: 640px;
     text-align: center;
 }
 

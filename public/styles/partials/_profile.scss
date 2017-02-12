@@ -3,6 +3,9 @@
     background: url('../img/profile-bg.jpg');
     padding: 1vh 0;
 }
+.profile-container {
+  min-height: 645px;
+}
 
 .profile-section {
     border-radius: 10px;
@@ -36,16 +39,10 @@
 }
 
 .img-wrapper {
-    background: no-repeat center/80% url("../img/frame.png");
-    max-height: 330px;
+    max-height: 315px;
     margin: 0 auto;
     overflow: hidden;
-    padding: 50px;
-    width: 267px;
-}
-
-.img-wrapper {
-    border-radius: 10px;
+    width: 315px;
 }
 
 .knot {

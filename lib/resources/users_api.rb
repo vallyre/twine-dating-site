@@ -63,3 +63,12 @@ post '/api/users' do
     status 400
   end
 end
+
+delete '/api/users/:id' do |id|
+  user = User.find_by_id(id)
+  if !user.exists?(id)
+    status 404
+  else
+    user.destroy(id)
+  end
+end

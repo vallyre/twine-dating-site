@@ -18,6 +18,12 @@ end
 #Optional: filter by gender (e.g. /api/users?gender=male)
 #Optional: select number of results (e.g. /api/users?gender=female&results=10, /api/users?results=100, etc.)
 #Optional: get last users id by position (e.g. /api/users?position=last)
+
+get '/' do
+  File.read(File.join('public', 'index.html'))
+end
+
+
 get '/api/users' do
   users = User.all
 
